@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.adfb997e.chunk.css",
+    "main.js": "/static/js/main.80c8a2bc.chunk.js",
+    "main.js.map": "/static/js/main.80c8a2bc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fb1964a1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fb1964a1.js.map",
+    "static/css/2.6824a4cd.chunk.css": "/static/css/2.6824a4cd.chunk.css",
+    "static/js/2.adf4895c.chunk.js": "/static/js/2.adf4895c.chunk.js",
+    "static/js/2.adf4895c.chunk.js.map": "/static/js/2.adf4895c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.08014aa98ca6f50a3569d6a1001189e4.js": "/precache-manifest.08014aa98ca6f50a3569d6a1001189e4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.6824a4cd.chunk.css.map": "/static/css/2.6824a4cd.chunk.css.map",
+    "static/css/main.adfb997e.chunk.css.map": "/static/css/main.adfb997e.chunk.css.map",
+    "static/js/2.adf4895c.chunk.js.LICENSE.txt": "/static/js/2.adf4895c.chunk.js.LICENSE.txt",
+    "static/media/debit-card.png": "/static/media/debit-card.b37296b9.png",
+    "static/media/female-professor-of-economy-with-bars-stocks-graphic-on-clipboard.png": "/static/media/female-professor-of-economy-with-bars-stocks-graphic-on-clipboard.4c515d67.png",
+    "static/media/bootstrap.min.css": "/static/media/glyphicons-halflings-regular.fa277232.woff",
+    "static/media/payment-method.png": "/static/media/payment-method.c6b87e7b.png",
+    "static/media/Landing.css": "/static/media/photo3.bd42a133.jpg",
+    "static/media/success.png": "/static/media/success.445a6a3f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb1964a1.js",
+    "static/css/2.6824a4cd.chunk.css",
+    "static/js/2.adf4895c.chunk.js",
+    "static/css/main.adfb997e.chunk.css",
+    "static/js/main.80c8a2bc.chunk.js"
+  ]
+}
