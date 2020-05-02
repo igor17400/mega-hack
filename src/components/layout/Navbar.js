@@ -32,13 +32,13 @@ class NavbarComponent extends Component {
                 Sobre nós
               </Nav.Link>
               <Nav.Link
-                href="/statistics"
+                href="/userpage"
                 style={{
                   color: "rgb(0, 0, 0)",
                   fontFamily: "Arial",
                 }}
               >
-                Aprendizagem
+                Minha Página
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
