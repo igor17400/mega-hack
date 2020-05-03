@@ -10,9 +10,12 @@ import {
   Alert,
   Carousel,
   Image,
+  ProgressBar,
 } from "react-bootstrap";
 
 import "./userPage.css";
+
+const now = 60;
 
 export default class UserPage extends Component {
   render() {
@@ -21,26 +24,44 @@ export default class UserPage extends Component {
         <Container>
           <Row>
             <Col>
-              <Container className="jumbotron-title">
-                <div className="container container-title">
-                  <h2 className="text-white">
-                    Escolha qualquer um de nossos parceiros e ganhe seu dinheiro
-                    de volta!{" "}
-                  </h2>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <Link to="/userpage">
-                    <Button variant="light" size="lg" >Parceiros</Button>{" "}
-                  </Link>
-                  <Link to="/dashboard">
-                    <Button variant="danger" size="lg" >Promoções</Button>{" "}
-                  </Link>
-                  <Link to="/dashboard">
-                    <Button variant="light" size="lg" >Investimentos</Button>{" "}
-                  </Link>
-                </div>
-              </Container>
+              <Jumbotron className="jumbotron-title">
+                <h1 style={{ textAlign: "center" }}>
+                  Bem vindo de volta, Luiz!
+                </h1>
+                <p className="text-white">
+                  Escolha qualquer um de nossos parceiros e dê mais um passo em
+                  direção ao seu sonho!{" "}
+                </p>
+                <Link to="/userpage">
+                  <Button variant="light" size="lg">
+                    Parceiros
+                  </Button>{" "}
+                </Link>
+                <Link to="/promocoes">
+                  <Button variant="danger" size="lg">
+                    Promoções
+                  </Button>{" "}
+                </Link>
+                <Link to="/dashboard">
+                  <Button variant="light" size="lg">
+                    Investimentos
+                  </Button>{" "}
+                </Link>
+              </Jumbotron>
+            </Col>
+          </Row>
+          <br></br>
+          <br></br>
+          <br></br>
+          <Row>
+            <Col>
+              <Jumbotron className="jumbotron-title">
+                <p className="text-white">
+                  <span style={{color: "black"}}>Lembre-se! </span>Você está a 60% de conseguir a sua tão
+                  desejada <span style={{color: "black"}}>viagem</span>
+                </p>
+                <ProgressBar variant="success" now={now} label={`${now}%`} />
+              </Jumbotron>
             </Col>
           </Row>
           <br></br>

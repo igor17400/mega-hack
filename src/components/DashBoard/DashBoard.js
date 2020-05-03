@@ -1,141 +1,106 @@
-import React, { Component } from "react";
+import React from "react";
+import NVD3Chart from "react-nvd3";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Jumbotron, Button } from "react-bootstrap";
-
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import classes from "./DashBoard.css";
-import LineGraph from "../Graphs/LineGraph";
 import {
-  tentativafeminicidio2017,
-  feminicidio2017,
-  tentativafeminicidio2018,
-  feminicidio2018,
-  tentativafeminicidio2019,
-  feminicidio2019,
-  tentativafeminicidio2020,
-  feminicidio2020,
-  yearLabels,
-} from "./mockData";
+  Container,
+  Row,
+  Col,
+  Jumbotron,
+  Button,
+  Card,
+  Alert,
+  Carousel,
+  Image,
+} from "react-bootstrap";
+import BarDiscreteChart from "./Graphs/BarDiscreteChart";
+import LineChart from "./Graphs/LineChart";
+import MultiBarChart from "./Graphs/MultiBarChart";
+import PieBasicChart from "./Graphs/PieBasicChart";
+import PieDonutChart from "./Graphs/PieDonutChart";
 
-function YearRender(props) {
-  const year = props.year;
-  if (year === "2017") {
-    return <h1>2017</h1>;
-  }
-
-  if (year === "2018") {
-    return <h1>2018</h1>;
-  }
-
-  if (year === "2019") {
-    return <h1>2019</h1>;
-  }
-
-  return <h1>2020</h1>;
-}
-
-export default class Dashboard extends Component {
-  state = {
-    data1: tentativafeminicidio2017,
-    data2: feminicidio2017,
-    labels: yearLabels,
-    year: "2017",
-  };
-
-  handleButtonClickYear = (e) => {
-    const { value } = e.target;
-    const newYear = value;
-    const is2017 = value === "2017";
-    const is2018 = value === "2018";
-    const is2019 = value === "2019";
-    const is2020 = value === "2020";
-
-    const newData1 = is2017
-      ? tentativafeminicidio2017
-      : is2018
-      ? tentativafeminicidio2018
-      : is2019
-      ? tentativafeminicidio2019
-      : tentativafeminicidio2020;
-
-    const newData2 = is2017
-      ? feminicidio2017
-      : is2018
-      ? feminicidio2018
-      : is2019
-      ? feminicidio2019
-      : feminicidio2020;
-
-    this.setState({
-      data1: newData1,
-      data2: newData2,
-      year: newYear,
-    });
-  };
-
+class Dashboard extends React.Component {
   render() {
-    const { data1, data2, labels, year } = this.state;
     return (
-      <div>
-        <Container fluid bg="dark">
-          <Row>
-            <Col>
-              <Jumbotron fluid className="jumbotron-box2">
-                <Container>
-                  <h2 className="text-pink">
-                    The amount of domestic violence per month
-                  </h2>
-                </Container>
-              </Jumbotron>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <div className="jumbotron jumbotron-title">
-                <Button
-                  value="2017"
-                  variant="dark"
-                  onClick={this.handleButtonClickYear}
-                >
-                  2017
-                </Button>{" "}
-                <Button
-                  value="2018"
-                  variant="dark"
-                  onClick={this.handleButtonClickYear}
-                >
-                  2018
-                </Button>{" "}
-                <Button
-                  value="2019"
-                  variant="dark"
-                  onClick={this.handleButtonClickYear}
-                >
-                  2019
-                </Button>{" "}
-                <Button
-                  value="2020"
-                  variant="dark"
-                  onClick={this.handleButtonClickYear}
-                >
-                  2020
-                </Button>{" "}
-                <div className={classes.container}>
-                  <YearRender year={year} />
-                  <br></br>
-                  <LineGraph data1={data1} data2={data2} labels={labels} />
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-
+      <Container>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Row>
+          <Jumbotron className="jumbotron-title">
+            <h1>Luiz, bem vindo a sua tela de monitoramento</h1>
+            <p className="text-white">
+              Aqui você pode monitorar todos os seus investimentos e como eles
+              estão sendo aplicados pelos nossos parceiros.
+            </p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Link to="/userpage">
+              <Button variant="light" size="lg">
+                Parceiros
+              </Button>{" "}
+            </Link>
+            <Link to="/promocoes">
+              <Button variant="danger" size="lg">
+                Promoções
+              </Button>{" "}
+            </Link>
+            <Link to="/dashboard">
+              <Button variant="light" size="lg">
+                Investimentos
+              </Button>{" "}
+            </Link>
+          </Jumbotron>
+        </Row>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Row>
+          <Col>
+            <Jumbotron className="jumbotron-title">
+              <p className="text-white">
+                <span style={{ color: "black" }}>Lembre-se! </span>Você está a
+                60% de conseguir a sua tão desejada{" "}
+                <span style={{ color: "black" }}>viagem</span>
+              </p>
+            </Jumbotron>
+          </Col>
+        </Row>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Row>
+          <Col>
+            <h4>Retorno nos ultimos meses</h4>
+            <BarDiscreteChart />
+          </Col>
+          <Col>
+            <h4>Retorno financeiro no ano de 2019</h4>
+            <MultiBarChart />
+          </Col>
+        </Row>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Row>
+          <Col></Col>
+          <Col>
+            <h4 style={{ textAlign: "center" }}>
+              Relatório de tipos de compras no ano de 2020
+            </h4>
+            <PieDonutChart />
+          </Col>
+          <Col></Col>
+        </Row>
+        <Row>
+          <Col></Col>
+          <Col></Col>
+          <Col></Col>
+        </Row>
         <footer className="container py-5">
           <div className="row">
             <div className="col-12 col-md">
-              <p>Pedhua</p>
+              <p>CashInvest</p>
               <small className="d-block mb-3 text-muted">© 2020-2021</small>
             </div>
 
@@ -208,7 +173,9 @@ export default class Dashboard extends Component {
             </div>
           </div>
         </footer>
-      </div>
+      </Container>
     );
   }
 }
+
+export default Dashboard;
