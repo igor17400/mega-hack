@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Jumbotron } from "react-bootstrap";
+import { Container, Row, Col, Jumbotron, ProgressBar } from "react-bootstrap";
 import "./Landing.css";
 
 import shop from "../../img/debit-card.png";
@@ -8,6 +8,8 @@ import cash from "../../img/payment-method.png";
 import woman_stock from "../../img/female-professor-of-economy-with-bars-stocks-graphic-on-clipboard.png";
 import success from "../../img/success.png";
 import travel from "../../img/travel.jpg";
+
+const now = 60;
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -120,14 +122,14 @@ class Landing extends Component {
                   <Col>
                     <img
                       alt=""
-                      src={woman_stock}
+                      src={success}
                       width="250"
                       height="250"
                       className="d-inline-block"
                     />{" "}
                     <h3 className="text-white">
-                      Temos <span className="text-secondColor">parcerias</span>{" "}
-                      com corretoras e empresas de educação financeira
+                      Te ajudamos a alcançar os seus{" "}
+                      <span className="text-secondColor">sonhos</span>
                     </h3>
                   </Col>
                   <Col xs={3}></Col>
@@ -139,14 +141,14 @@ class Landing extends Component {
                   <Col>
                     <img
                       alt=""
-                      src={success}
+                      src={woman_stock}
                       width="250"
                       height="250"
                       className="d-inline-block"
                     />{" "}
                     <h3 className="text-white">
-                      Te ajudamos a alcançar os seus{" "}
-                      <span className="text-secondColor">sonhos</span>
+                      Temos <span className="text-secondColor">parcerias</span>{" "}
+                      com corretoras e empresas de educação financeira
                     </h3>
                   </Col>
                 </Row>
@@ -224,7 +226,7 @@ class Landing extends Component {
                 <Row>
                   <Col>
                     <h2 className="text-white">
-                      Ao oferecer{" "}
+                      Ao receber{" "}
                       <span className="text-secondColor">cashback</span> em suas
                       compras, você economiza comprando e esse dinheiro é{" "}
                       <span className="text-secondColor">investido</span>, para
@@ -257,6 +259,12 @@ class Landing extends Component {
                       <span className="text-secondColor">sonho</span> você já
                       acumulou.
                     </h2>
+                    <br></br>
+                    <ProgressBar
+                      variant="success"
+                      now={now}
+                      label={`${now}%`}
+                    />
                   </Col>
                 </Row>
               </Container>
@@ -297,6 +305,8 @@ class Landing extends Component {
                     </h2>
                   </Col>
                 </Row>
+                <br></br>
+                <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
