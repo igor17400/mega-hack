@@ -59,10 +59,38 @@ class Dashboard extends React.Component {
           <Col>
             <Jumbotron className="jumbotron-title">
               <p className="text-white">
-                <span style={{ color: "black" }}>Lembre-se! </span>Você está a
-                60% de conseguir a sua tão desejada{" "}
-                <span style={{ color: "black" }}>viagem</span>
+                Aqui você pode escolher qualquer um de nossos parceiros e
+                investir atráves deles. Seu cashback será enviado diretamente para sua conta na
+                plataforma escolhida.
               </p>
+              <br></br>
+              <br></br>
+              <Container>
+                <Row>
+                  <Col xs={2}></Col>
+                  <Col xs={3}>
+                    <Image
+                      style={{ height: "150px", width: "150px" }}
+                      src="https://pbs.twimg.com/profile_images/1178776555197218817/t9N8gxT3_400x400.jpg"
+                      rounded
+                    />
+                  </Col>
+                  <Col xs={3}>
+                    <Image
+                      style={{ height: "150px", width: "150px" }}
+                      src="https://www.foregon.com/blog/wp-content/uploads/2018/11/rico-corretora-confiavel.jpg"
+                      rounded
+                    />
+                  </Col>
+                  <Col xs={3}>
+                    <Image
+                      style={{ height: "150px", width: "150px" }}
+                      src="https://cdn.guiadoinvestidor.com.br/2019/04/easyinvest.png"
+                      rounded
+                    />
+                  </Col>
+                </Row>
+              </Container>
             </Jumbotron>
           </Col>
         </Row>

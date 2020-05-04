@@ -7,6 +7,7 @@ import shop from "../../img/debit-card.png";
 import cash from "../../img/payment-method.png";
 import woman_stock from "../../img/female-professor-of-economy-with-bars-stocks-graphic-on-clipboard.png";
 import success from "../../img/success.png";
+import travel from "../../img/travel.jpg";
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -24,14 +25,11 @@ class Landing extends Component {
         <Container fluid bg="light">
           <Row>
             <Col>
-              <Container fluid className="jumbotron-title">
+              <Container fluid className="jumbotron-title2">
                 <div className="container container-title">
                   <h2 className="text-white">
-                    E se você conseguisse aprender sobre{" "}
-                    <span className="lead-secondColor">investimentos</span>{" "}
-                  </h2>
-                  <h2 className="text-white">
-                    de maneira simples, sem riscos e eficiente?
+                    O jeito mais fácil de acumular{" "}
+                    <span className="lead-secondColor">dinheiro</span>.{" "}
                   </h2>
                 </div>
               </Container>
@@ -45,13 +43,59 @@ class Landing extends Component {
                 <br></br>
                 <Row>
                   <Col></Col>
-                  <Col xs={6}></Col>
+                  <Col xs={4}></Col>
                   <Col>
                     <h2 className="text-white">
-                      Compras convertidas em{" "}
-                      <span className="text-firstColor">investimentos</span>{" "}
+                      Parte do dinheiro que você gastar nas lojas parceiras é
+                      revertido em{" "}
+                      <span className="text-firstColor">cashback</span>
                     </h2>
                   </Col>
+                </Row>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Row>
+                  <Col>
+                    <h2 className="text-white">
+                      E esse valor é{" "}
+                      <span className="text-firstColor">investido</span> no
+                      nosso fundo.
+                    </h2>
+                  </Col>
+                  <Col xs={6}></Col>
+                  <Col></Col>
+                </Row>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Row>
+                  <Col>
+                    <h2 className="text-white">
+                      Você economiza e o seu dinheiro{" "}
+                      <span className="text-firstColor">rende</span>{" "}
+                    </h2>
+                  </Col>
+                  <Col xs={6}></Col>
+                  <Col></Col>
                 </Row>
               </Container>
             </Col>
@@ -63,7 +107,7 @@ class Landing extends Component {
                   <Col></Col>
                   <Col xs={6}>
                     <h2 className="text-white">
-                      Reinventamos o jeito de se aprender a investir.
+                      Investimos uma parte do dinheiro gasto em nossos parceiros
                     </h2>
                     <ColoredLine color="rgb(255, 255, 255)" />
                   </Col>
@@ -76,51 +120,15 @@ class Landing extends Component {
                   <Col>
                     <img
                       alt=""
-                      src={shop}
-                      width="150"
-                      height="150"
-                      className="d-inline-block"
-                    />{" "}
-                    <h3 className="text-white">
-                      Faça <span className="text-secondColor">compras</span>{" "}
-                      físicas ou online em quaisquer de nossos parceiros
-                    </h3>
-                  </Col>
-                  <Col xs={3}></Col>
-                  <Col></Col>
-                </Row>
-                <Row>
-                  <Col></Col>
-                  <Col xs={3}></Col>
-                  <Col>
-                    <img
-                      alt=""
-                      src={cash}
-                      width="150"
-                      height="150"
-                      className="d-inline-block"
-                    />{" "}
-                    <h3 className="text-white">
-                      Ganhe seu{" "}
-                      <span className="text-secondColor">dinheiro</span> de
-                      volta para cada compra realizada
-                    </h3>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col>
-                    <img
-                      alt=""
                       src={woman_stock}
-                      width="150"
-                      height="150"
+                      width="250"
+                      height="250"
                       className="d-inline-block"
                     />{" "}
                     <h3 className="text-white">
-                      Créditos convertidos em{" "}
-                      <span className="text-secondColor">educação</span>{" "}
+                      Temos <span className="text-secondColor">parcerias</span>{" "}
+                      com corretoras e empresas de educação financeira
                     </h3>
-                    <h3 className="text-white">financeira</h3>
                   </Col>
                   <Col xs={3}></Col>
                   <Col></Col>
@@ -132,16 +140,32 @@ class Landing extends Component {
                     <img
                       alt=""
                       src={success}
-                      width="150"
-                      height="150"
+                      width="250"
+                      height="250"
                       className="d-inline-block"
                     />{" "}
                     <h3 className="text-white">
-                      Aprenda com os{" "}
-                      <span className="text-secondColor">melhores</span> e dê
-                      mais a um passo em direção ao seu sonho
+                      Te ajudamos a alcançar os seus{" "}
+                      <span className="text-secondColor">sonhos</span>
                     </h3>
                   </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <img
+                      alt=""
+                      src={cash}
+                      width="250"
+                      height="250"
+                      className="d-inline-block"
+                    />{" "}
+                    <h3 className="text-white">
+                      Não cobramos{" "}
+                      <span className="text-secondColor">anuidade</span>
+                    </h3>
+                  </Col>
+                  <Col xs={3}></Col>
+                  <Col></Col>
                 </Row>
                 <br></br>
                 <br></br>
@@ -152,15 +176,15 @@ class Landing extends Component {
           <Row>
             <Col>
               <Container fluid className="cover-image3 container-size">
+                <br></br>
+                <br></br>
+                <br></br>
                 <Row>
                   <Col></Col>
                   <Col xs={5}>
                     <h2 className="text-secondColor">
-                      Não perca mais <span className="text-white">tempo</span>{" "}
-                    </h2>
-                    <h2 className="text-secondColor">
-                      Junte-se a uma plataforma unificada que se preocupa com o
-                      seu planejamento financeiro
+                      Te ajudamos a transformar seus sonhos em{" "}
+                      <span className="text-white">metas</span>.
                     </h2>
                   </Col>
                   <Col></Col>
@@ -170,11 +194,143 @@ class Landing extends Component {
           </Row>
           <Row>
             <Col>
-              <Container fluid className="jumbotron-title">
+              <Container fluid className="cover-image4 container-size">
+                <Row>
+                  <Col></Col>
+                  <Col xs={7}>
+                    <h2 className="text-secondColor">
+                      Sempre quis comprar um carro, ou quem sabe, viajar, mas
+                      economizar parece{" "}
+                      <span className="text-white">impossível</span>?
+                    </h2>
+                  </Col>
+                  <Col></Col>
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Container fluid className="cover-image5 container-size">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Row>
+                  <Col>
+                    <h2 className="text-white">
+                      Ao oferecer{" "}
+                      <span className="text-secondColor">cashback</span> em suas
+                      compras, você economiza comprando e esse dinheiro é{" "}
+                      <span className="text-secondColor">investido</span>, para
+                      que você se aproxime cada vez mais do seu sonho.
+                    </h2>
+                  </Col>
+                  <Col xs={1}></Col>
+                  <Col></Col>
+                </Row>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Row>
+                  <Col></Col>
+                  <Col xs={1}></Col>
+                  <Col>
+                    <h2 className="text-white">
+                      Na nossa <span className="text-secondColor">barra</span>{" "}
+                      de metas você consegue acompanhar quantos % do valor
+                      necessário para realizar seu{" "}
+                      <span className="text-secondColor">sonho</span> você já
+                      acumulou.
+                    </h2>
+                  </Col>
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Container fluid className="cover-image6 container-size">
+                <Row>
+                  <Col></Col>
+                  <Col xs={8}>
+                    <h2 className="text-secondColor">
+                      Na página do <span className="text-white">usuário</span> é
+                      possível acompanhar onde o seu dinheiro foi investido e
+                      seu rendimento.
+                    </h2>
+                  </Col>
+                  <Col></Col>
+                </Row>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Row>
+                  <Col></Col>
+                  <Col xs={5}></Col>
+                  <Col>
+                    <h2 className="text-secondColor">
+                      Caso queira investir mais, oferecemos dicas de
+                      profissionais e parcerias com plataformas de educação
+                      financeira.
+                    </h2>
+                  </Col>
+                </Row>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Row>
+                  <Col></Col>
+                  <Col xs={8}>
+                    <h2 className="text-secondColor">
+                      Assim você aprende a acumular mais dinheiro e chegar mais
+                      perto de seus objetivos.
+                    </h2>
+                  </Col>
+                  <Col></Col>
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Container fluid className="jumbotron-title2">
                 <div className="container container-title">
-                  <h2 className="text-white">Aprenda a investir.</h2>
                   <h2 className="text-white">
-                    Cash<span className="lead-secondColor">Invest</span>
+                    <span className="text-firstColor">Cash</span>
+                    <span className="lead-secondColor">Invest</span>
                   </h2>
                 </div>
               </Container>

@@ -21,9 +21,9 @@ export default class Promocoes extends Component {
         <Container>
           <Row>
             <Col>
-              <Jumbotron style={{ backgroundColor: "#9f0101" }}>
+              <Jumbotron style={{ backgroundColor: "rgb(0, 144, 158)" }}>
                 <h1 style={{ textAlign: "center" }}>
-                  Promoção de nossos parceiros!
+                  Melhores ofertas do dia!
                 </h1>
                 <br></br>
                 <br></br>
